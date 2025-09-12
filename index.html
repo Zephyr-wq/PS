@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://res.cloudinary.com/det5cjrev/image/upload/v1757680423/ChatGPT_Image_Sep_12_2025_01_30_43_AM_kerh4m.png" type="image/png">
+  <title>PlayStation Style Recreation</title>
+  <style>
+    /* Reset / base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Arial", sans-serif;
+      background-color: #000;
+      color: #fff;
+      line-height: 1.5;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* Navigation */
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #111;
+    }
+    .nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+    }
+    .nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+    .nav ul li {
+      padding: 0.5rem 1rem;
+    }
+    .nav ul li:hover {
+      background-color: #222;
+    }
+
+    /* Hero / Banner Section */
+    .hero {
+      position: relative;
+      background: url('https://res.cloudinary.com/det5cjrev/image/upload/v1757681208/download_2_ubwhir.jpg') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+    .hero .hero-content {
+      background-color: rgba(0,0,0,0.5);
+      padding: 2rem;
+      border-radius: 8px;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    .hero .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #0070d1; /* PlayStation-blue style accent */
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .hero .btn:hover {
+      background-color: #005fa3;
+    }
+
+    /* Cards Section */
+    .cards-container {
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+    .card {
+      background-color: #1a1a1a;
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+    .card-content {
+      padding: 1rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+    .card-content p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      flex: 1;
+    }
+    .card-content .btn-card {
+      padding: 0.5rem 1rem;
+      background-color: #0070d1;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      width: fit-content;
+    }
+    .card-content .btn-card:hover {
+      background-color: #005fa3;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #111;
+      color: #bbb;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    .footer a {
+      color: #bbb;
+      margin: 0 0.5rem;
+    }
+    .footer a:hover {
+      color: #fff;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="logo">PlayStation</div>
+    <ul>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Games</a></li>
+      <li><a href="#">PlayStation Plus</a></li>
+      <li><a href="#">Accessories</a></li>
+      <li><a href="#">Support</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Experience the Next Generation of Play</h1>
+      <p>Discover new thrills. The latest games. Immersive devices. Everything you love about PlayStation — taken even further.</p>
+      <button class="btn">Explore PS5</button>
+    </div>
+  </section>
+
+  <!-- Cards Section -->
+  <section class="cards-container">
+    <div class="card">
+      <img src="https://res.cloudinary.com/det5cjrev/image/upload/v1757680410/download_4_cvvxoa.jpg" alt="Game Releases">
+      <div class="card-content">
+        <h3>New Game Release</h3>
+        <p>Check out the latest blockbuster hitting PS5 and PS4 now.</p>
+        <button class="btn-card">Buy Now</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://res.cloudinary.com/det5cjrev/image/upload/v1757680409/download_jaqlsj.jpg" alt="Best Deals">
+      <div class="card-content">
+        <h3>PS Plus Deals</h3>
+        <p>Save big in our special PlayStation Store sale.</p>
+        <button class="btn-card">See Deals</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://res.cloudinary.com/det5cjrev/image/upload/v1757680409/download_1_slbmuu.jpg" alt="Accessory">
+      <div class="card-content">
+        <h3>Get the DualSense Controller</h3>
+        <p>Feel the action with responsive haptic feedback and adaptive triggers.</p>
+        <button class="btn-card">Find Out More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 PlayStation. All rights reserved.</p>
+    <p>
+      <a href="#">Legal</a> |
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Terms of Use</a>
+    </p>
+  </footer>
+
+  <!-- Optional JS (if needed) -->
+  <script>
+    // Example: menu toggle or other interactive features could go here
+  </script>
+
+</body>
+</html>
