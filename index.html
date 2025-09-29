@@ -34,6 +34,7 @@
       align-items: center;
       padding: 1rem 2rem;
       background-color: #111;
+      position: relative;
     }
     .nav .logo {
       font-size: 1.5rem;
@@ -52,6 +53,32 @@
       background-color: #222;
     }
 
+    /* Mobile Nav Toggle */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .menu-toggle span {
+      height: 3px;
+      width: 25px;
+      background: #fff;
+      margin: 4px 0;
+      border-radius: 2px;
+    }
+    .nav ul.mobile-hidden {
+      display: none;
+      flex-direction: column;
+      background: #111;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 200px;
+    }
+    .nav ul.mobile-hidden li {
+      text-align: right;
+    }
+
     /* Hero / Banner Section */
     .hero {
       position: relative;
@@ -67,6 +94,7 @@
       background-color: rgba(0,0,0,0.5);
       padding: 2rem;
       border-radius: 8px;
+      max-width: 800px;
     }
     .hero h1 {
       font-size: 2.5rem;
@@ -156,12 +184,43 @@
     }
 
     /* Responsive tweaks */
+    @media (max-width: 1024px) {
+      .hero h1 { font-size: 2.2rem; }
+      .hero p { font-size: 1.1rem; }
+    }
     @media (max-width: 768px) {
+      .nav ul {
+        display: none;
+      }
+      .menu-toggle {
+        display: flex;
+      }
+      .hero {
+        height: 50vh;
+      }
       .hero h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
       }
       .hero p {
         font-size: 1rem;
+      }
+    }
+    @media (max-width: 480px) {
+      .hero {
+        height: 40vh;
+        padding: 1rem;
+      }
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+      .hero p {
+        font-size: 0.9rem;
+      }
+      .card-content h3 {
+        font-size: 1.1rem;
+      }
+      .card-content p {
+        font-size: 0.9rem;
       }
     }
   </style>
@@ -171,7 +230,12 @@
   <!-- Navigation -->
   <nav class="nav">
     <div class="logo">PlayStation</div>
-    <ul>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul id="nav-links">
       <li><a href="#">Products</a></li>
       <li><a href="#">Games</a></li>
       <li><a href="#">PlayStation Plus</a></li>
@@ -227,9 +291,14 @@
     </p>
   </footer>
 
-  <!-- Optional JS (if needed) -->
+  <!-- JS for Menu -->
   <script>
-    // Example: menu toggle or other interactive features could go here
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('mobile-hidden');
+    });
   </script>
 
 </body>
